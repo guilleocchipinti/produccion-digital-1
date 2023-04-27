@@ -1,0 +1,102 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  body{
+    background-image: url();
+    background-size: contain;
+    background-repeat: no-repeat;
+
+  }
+  
+
+  li{
+    justify-content: space-around;
+    width: 100%;
+  }
+
+
+ nav ul {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #345530;
+  position: sticky;
+  }
+
+
+  nav ul a{
+    text-decoration: none;
+    font-size:30px;
+   font-family: 'Montserrat', sans-serif;    
+   color: #e7e5de;
+  }
+
+  ul{
+
+      list-style-type: none;
+  }
+  
+  h1{
+      text-align: center; 
+      color: #345530;
+      font-family: 'IBM Plex Serif', serif;
+  }
+  
+  h2 {
+    text-align: center;
+
+  }
+  
+ 
+
+ .sabor img{
+
+  flex-wrap: wrap;
+  display: inline-flex;
+    width: 25%;
+    height: 300;
+    border-radius: 12px 12px 12px;
+    margin: 40px 40px 40px 40px;
+    box-sizing: border-box;
+  }
+
+  div {
+    margin: auto auto auto;
+    padding: auto;
+    border-radius: 20px 20px 60px;
+  }
+
+  .mi-boton{
+    background-color: #714600;
+   color:#e7e5de;
+   margin-left: 50%;
+   margin-right: 50%;
+  }
+   footer{
+    background-color: #5c6d5a;
+    color:#e7e5de;
+   }
+    
+.market img{
+  display: inline-flex;
+  flex-direction: row;
+  width: 20%;
+  height: 200;
+  border-radius: 12px 12px 12px;
+  margin: 30px 30px 30px 30px;
+  box-sizing: border-box;
+  border-color: #345530;
+}
+
+.nosotros img{
+  width: 20%;
+  height: 200;
+  border-radius: 12px 
+  margin: 30px 
+  box-sizing: border-box;
+  border-color: #345530;
+}
+
