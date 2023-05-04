@@ -1,15 +1,21 @@
 html {
     height: 100%;
     width: 100%;
+    
   }
 
 
   body{
-    background-image: url();
-    background-size: contain;
-    background-repeat: no-repeat;
+
+    background-color: #e7e5de;
 
   }
+
+.home{
+  background-image: url(resources/home.png);
+  background-size: 600px 600px;
+  background-repeat:no-repeat;
+}
   
 
   li{
@@ -21,6 +27,7 @@ html {
  nav ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
   background-color: #345530;
   position: sticky;
@@ -32,11 +39,11 @@ html {
     font-size:30px;
    font-family: 'Montserrat', sans-serif;    
    color: #e7e5de;
+  display: flex;
   }
 
   ul{
-
-      list-style-type: none;
+   list-style-type: none;
   }
   
   h1{
@@ -47,10 +54,13 @@ html {
   
   h2 {
     text-align: center;
+    font-family: 'Sora', sans-serif;
 
   }
   
- 
+ p{
+  font-family: 'Sora', sans-serif;
+ }
 
  .sabor img{
 
@@ -58,12 +68,15 @@ html {
   display: inline-flex;
     width: 25%;
     height: 300;
-    border-radius: 12px 12px 12px;
+    border-radius: 12px 12px 12px,12px;
     margin: 40px 40px 40px 40px;
     box-sizing: border-box;
+    justify-content: space-around;
+    
   }
 
   div {
+    box-sizing: border-box;
     margin: auto auto auto;
     padding: auto;
     border-radius: 20px 20px 60px;
@@ -71,32 +84,99 @@ html {
 
   .mi-boton{
     background-color: #714600;
-   color:#e7e5de;
-   margin-left: 50%;
-   margin-right: 50%;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 25px ;
+    justify-content: center;
+    align
   }
+
    footer{
     background-color: #5c6d5a;
-    color:#e7e5de;
-   }
-    
-.market img{
-  display: inline-flex;
-  flex-direction: row;
-  width: 20%;
-  height: 200;
-  border-radius: 12px 12px 12px;
-  margin: 30px 30px 30px 30px;
-  box-sizing: border-box;
-  border-color: #345530;
+    color:#e7e5de; 
+  }
+
+footer img{
+  width: 30px;
+  height: 30px;
+  
 }
 
-.nosotros img{
-  width: 20%;
-  height: 200;
-  border-radius: 12px;
-  margin: 30px;
-  box-sizing: border-box;
-  border-color: #345530;
+
+.market{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
 
+.bloque {
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  background-color: #FFFF;
+  font-family: 'Sora', sans-serif;
+  border-radius: 25px 25px 25px 25px;
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+.bloque img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px 12px 12px 12px;
+  padding: 5%;
+  box-sizing: border-box;
+  border-color: #345530;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.bloque h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bloque p {
+  font-size: 16px;
+}
+.carrito{
+  border-radius: 25px;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #345530;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .boton:hover {
+    background-color: #5c6d5a;
+  }
+
+  .fa-light{
+    color: #714600;
+  }
+
+  i.fa-solid {
+    font-size: 4em;
+    color: #345530;
+  }
+
+.nosotras{
+    width: 80%;
+    height: 500px;
+    border-radius: 25px 25px 25px 25px;
+
+  }
