@@ -1,101 +1,218 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Casa Nueza</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
-  <body>
+
+<head>
+  <title>Casa Nueza</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+</head>
+
+<body>
+
   <header>
-    <nav>
-        <ul>
-          <li><a href="Nosotros.html">Nosotros</a></li>
-          <li><a href="#Ubicació.html">Ubicación</a></li>
-          <li> <img src="resources/logo blanco final.png" alt="logo"></li>
-          <li><a href="#Pedidos.html">Pedidos</a></li>
-          <li><a href="Extras.html">Extras</a></li>
-          <li> <img src="resources/carrito.png" alt="carrito"></li>
-        </ul>
-      </nav>
-    </header>
-<div class="home">
-    <h1>100% PLANT BASED FOOD</h1>
-    <h2>Disfrutá de nuestro menú vegano</h2>
-    <button class="mi-boton">MENÚ</button>
-  </div>
-
-    <div class="sabor">
-      <img src="https://veganasargentinas.com/wp-content/uploads/2022/04/casa-nueza-palermo-3.png" alt="savory">
+    <nav class="nave">
+      <ul>
+        <li>
+          <a href="#acerca">Nosotros</a>
+        </li>
+        <li>
+          <a href="#maps">Ubicación</a>
+        </li>
+        <li>
+          <a href="index.html">
+          <img class="logo" src="resources/logo blanco final.png" alt="logo">
+        </a>
+        </li>
+        <li>
+          <a href="Pedidos.html">Pedidos</a>
+        </li>
+        <li>
+          <a href="Market.html">Market</a>
+        </li>
+        <li class="iconos">
+          <button class="favorito">
+            <a href="favorito.html">
+              <i class="fa-duotone fa-heart" style="--fa-primary-color: #e7e5de; --fa-secondary-color: #e7e5de; margin-right: 2px;"></i>
+            </a>
+          </button>
+          <button class="cesta">
+            <a href="carrito.html">
+              <i class="fa-duotone fa-basket-shopping-simple" style="--fa-primary-color: #e7e5de; --fa-secondary-color: #e7e5de; margin-left: 2px;"></i>
+            </a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
   
-    <img src="https://veganasargentinas.com/wp-content/uploads/2022/04/casa-nueza-palermo-2.png" alt="sweet"> 
   
-    <img src="https://images.happycow.net/venues/1024/22/42/hcmp224235_1305088.jpeg" alt="drinks">
+   
 
+
+
+<div class="contenedor">
+      <div class="tostada"> 
+        <img id="homefoto" src="resources/Capa 1.png" alt="home">
+      </div>
+        <div class="home">
+      <h1>100% <span>PLANT-  BASED</span> FOOD</h1>
+      <h2>Disfrutá de nuestro menú vegano</h2>
+      <button class="mi-boton"><a href="resources/2023_Menu_CasaNueza_QR.pdf" target="_blank">MENÚ</a></button>
     </div>
 
-    <h2>Market</h2>
-    <div class="market">
+  </div>
 
-        <div class="bloque">
-          <img src="resources/crunchy granola.png" alt="granola">
-          <h3>Crunchy granola</h3>
-          <p>$2100</p>
-          <button class="carrito"> Añadir a cesta</button>
-          <i class="fa-light fa-heart"></i>
-        </div>
-        <div class="bloque">
-          <img src="resources/leche de avena.png" alt="avena">
-          <h3>Leche de avena</h3>
-          <p>$1900</p>
-          <button class="carrito"> Añadir a cesta</button>
-          <i class="fa-light fa-heart"></i>
-        </div>
-        <div class="bloque">
-          <img src="resources/mant. de mani.png" alt="mani">
-          <h3>Mantequilla de mani</h3>
-          <p>$950</p>
-          <button class="carrito"> Añadir a cesta</button>
-          <i class="fa-light fa-heart"></i>
-        </div>
-        <div class="bloque">
-          <img src="resources/caju untable.png" alt="caju">
-          <h3>Untable de Cajú</h3>
-          <p>$1900</p>
-          <button class="carrito"> Añadir a cesta</button>
-          <i class="fa-light fa-heart"></i>
-        </div>
-        <i class="fa-solid fa-caret-right"></i>
 
+
+  <div class="sabor">
+    <div class="savory">
+      <div class="savoryh1">
+        <h1><a href="resources/SALADO CARTA.png" target="_blank">SAVORY</a></h1>
       </div>
-      
+    </div>
+    <div class="sweet">
+      <div class="sweeth1">
+        <h1><a href="resources/DULCE CARTA.png" target="_blank">SWEET</a></h1>
+      </div>
+    </div>
+    <div class="drinks">
+      <div class="drinksh1">
+        <h1><a href="resources/DRINKS CARTA.png" target="_blank">DRINKS</a></h1>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <hr class="divisor">
+  <div class="linea">
+    <div class="corte"></div>
+    <span class="palabra">Market</span>
+    <div class="corte"></div>
+  </div>
+  
+  
+  <div class="compras">
+    <div class="bloque">
+      <img src="resources/crunchy granola.png" alt="granola">
+      <h3>Crunchy granola</h3>
+      <p>$2100</p>
+      <button class="carrito"> Añadir a cesta
+        <a href="carrito.html"></a>
+      </button>
+      <button class="favorite-button" type="button">
+        <i class="fa-light fa-heart"></i>
+      </button>
+    </div>
+    <div class="bloque">
+      <img src="resources/leche de avena.png" alt="avena">
+      <h3>Leche de avena</h3>
+      <p>$1900</p>
+      <button class="carrito"> Añadir a cesta
+        <a href="carrito.html"></a>
+      </button>
+      <button class="favorite-button" type="button">
+        <i class="fa-light fa-heart"></i>
+      </button>
+    </div>
+    <div class="bloque">
+      <img src="resources/mant. de mani.png" alt="mani">
+      <h3>Mantequilla de mani</h3>
+      <p>$950</p>
+      <button class="carrito"> Añadir a cesta
+        <a href="carrito.html"></a>
+      </button>
+      <button class="favorite-button" type="button">
+        <i class="fa-light fa-heart"></i>
+      </button>
+    </div>
+    <div class="bloque">
+      <img src="resources/caju untable.png" alt="caju">
+      <h3>Untable de Cajú</h3>
+      <p>$1900</p>
+      <button class="carrito"> Añadir a cesta  
+        <a href="carrito.html"></a>
+      </button>
+      <button class="favorite-button" type="button">
+        <i class="fa-light fa-heart"></i>
+      </button>
+    </div>
+    <button class="ver-mas">
+      <a href="market.html">Ver más</a>
+    </button>
+    
+  </div>
+  </div>
 
 
-<div id="Nosotros" style="text-align: center;">
-  <h2>Sobre nosotras</h2>
-  <img class="nosotras" src="resources/Captura de Pantalla 2023-04-27 a la(s) 16.16.52.png" width="60%" height="40%" alt="creadoras">
-  <p>¡Bienvenidos a Casa Nueza! Somos una propuesta innovadora en el mundo de la cocina a base de plantas. Si estás buscando encarar un cambio de alimentación, sin tener que renunciar al placer de una comida exquisita, ¡estás en el lugar correcto! </p>
-  <p>Todo comenzó con un pequeño proyecto de take away de cocina saludable creado por las hermanas veganas Agustina y Catalina. Ambas hermanas se dieron cuenta de que había una necesidad en el mercado para ofrecer opciones de comida vegana saludable y así, nació Casa Nueza.</p>
-  <p>Debido a la gran demanda de nuestros productos, hoy en día, contamos con varios locales para que puedas disfrutar de nuestros platos deliciosos en un ambiente acogedor y agradable.</p>
-  <p>En Casa Nueza, ofrecemos una gran variedad de opciones para el desayuno, almuerzo y merienda, todas ellas elaboradas con ingredientes naturales y de alta calidad.</p>
-  <p>Así que, si estás buscando una experiencia gastronómica única y saludable, ¡vení a visitarnos! </p>
-</div>
+  
+  <hr class="divisor">
+  <div class="linea">
+    <div class="corte"></div>
+    <span class="palabra">Sobre Nosotras</span>
+    <div class="corte"></div>
+  </div>
+  
 
-<div id="maps">
-  <h2>Ubicación</h2>
-  <iframe  class=" maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.347369149418!2d-58.41905042411822!3d-34.59537665705789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0f23b2c771%3A0x64839fbdb35110b8!2sCasa%20Nueza!5e0!3m2!1ses!2sar!4v1681956058558!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-<ul>
-  <li>Gorriti 3679</li>
-  <li>Lavalleja 1373</li>
 
-</ul>
-</div>
+  <section id="acerca">
+    <span>¡Bienvenidos a Casa Nueza! Somos una propuesta innovadora en el mundo de la cocina a base de plantas. Si estás
+      buscando encarar un cambio de alimentación, sin tener que renunciar al placer de una comida exquisita, ¡estás en
+      el lugar correcto! </p>
+      Todo comenzó con un pequeño proyecto de take away de cocina saludable creado por las hermanas veganas Agustina y
+      Catalina. Ambas hermanas se dieron cuenta de que había una necesidad en el mercado para ofrecer opciones de comida
+      vegana saludable y así, nació Casa Nueza.</p>
+      Debido a la gran demanda de nuestros productos, hoy en día, contamos con varios locales para que puedas disfrutar
+      de nuestros platos deliciosos en un ambiente acogedor y agradable.
+      En Casa Nueza, ofrecemos una gran variedad de opciones para el desayuno, almuerzo y merienda, todas ellas
+      elaboradas con ingredientes naturales y de alta calidad.
+      Así que, si estás buscando una experiencia gastronómica única y saludable, ¡vení a visitarnos! </span>
+    <img class="nosotras" src="resources/Captura de Pantalla 2023-04-27 a la(s) 16.16.52.png" alt="creadoras">
+  </section>
 
-<footer>
-  <h3> Vení a conocernos!</h3>
-  <p> Todos los dias de 8 a 20hs </p>
-  <p> <img src="resources/insta.png" alt="insta"> @casanueza</p>
-  <p> <img src="resources/spotify.png" alt="spotify"> @elviogomez</p>
-</footer>
 
-  </body>
+
+  <hr class="divisor">
+  <div class="linea">
+    <div class="corte"></div>
+    <span class="palabra">ubicación</span>
+    <div class="corte"></div>
+  </div>
+  
+
+  <section id="maps">
+    <div class="maps-cont">
+      <iframe class="maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.347369149418!2d-58.41905042411822!3d-34.59537665705789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0f23b2c771%3A0x64839fbdb35110b8!2sCasa%20Nueza!5e0!3m2!1ses!2sar!4v1681956058558!5m2!1ses!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+      <div class="direcciones">
+        <ul>
+          <li>Gorriti 3679</li>
+          <li>Lavalleja 1373</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <footer>
+    <div class="footer-content">
+      <h3>Vení a conocernos!</h3>
+      <p>Todos los días de 8 a 20hs</p>
+      <ul class="social-icons">
+        <li><i class="fa-brands fa-instagram" style="color: #e7e5de;"></i> <a href="https://www.instagram.com/casanueza/" target="_blank">@casanueza</a></li>
+        <li><i class="fa-brands fa-spotify" style="color: #e7e5de;"></i> <a href="https://open.spotify.com/user/elviogomez" target="_blank">elviogomez</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  
+
+</body>
+
 </html>
