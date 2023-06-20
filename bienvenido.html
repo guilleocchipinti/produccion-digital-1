@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Casa Nueza</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+
+
+</head>
+
+
+<header class="header-container">
+
+  <div class="header">
+  
+    <div class="menu-icon" onclick="toggleMenu()">
+     <a href="index.html" class="logocel">
+        <img src="resources/logo blanco final.png" alt="logo">
+      </a>
+    </div>
+    <ul class="menu" id="myMenu">
+      <li>
+        <a href="index.html#acerca">Nosotras</a>
+      </li>
+      <li>
+        <a href="index.html#maps">Ubicación</a>
+      </li>
+    </ul>
+      <a href="index.html" class="logo">
+        <img src="resources/logo blanco final.png" alt="logo">
+      </a>
+      <ul class="menu" id="myMenu">
+      <li>
+        <a href="market.html">Market</a>
+      </li>
+      <li>
+    <a><button class="pedidos" id="myBtn">Pedidos</button> </a>
+      </li>
+      <li class="iconos">
+        <button class="user">
+          <a href="micuenta.html">
+            <i class="fa-duotone fa-user" style="--fa-primary-color: #e7e5de; --fa-secondary-color: #e7e5de;"></i>
+          </a>
+        </button>
+        <button class="favorito">
+          <a href="favorito.html">
+            <i class="fa-duotone fa-heart" style="--fa-primary-color: #e7e5de; --fa-secondary-color: #e7e5de; margin-right: 2px;"></i>
+          </a>
+        </button>
+        <button class="cesta">
+          <a href="carrito.html">
+            <i class="fa-duotone fa-basket-shopping-simple" style="--fa-primary-color: #e7e5de; --fa-secondary-color: #e7e5de; margin-left: 2px;"></i>
+          </a>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="responsive">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html#acerca">Nosotras</a>
+      <a href="index.html#maps">Ubicación</a>
+      <a href="market.html">Market</a>
+     <a class="pedidosbtn"> <button onclick="toggleSubcategories()">Pedidos</button></a> 
+      <div id="subcategories" style="display: none;">
+        <a href="https://www.rappi.com.ar/restaurantes/208447-casa-nueza">Pedi por Rappi</a>
+        <a href="https://api.whatsapp.com/send/?text=Ped%C3%AD+por+Whatsapp+-+https%3A%2F%2Ftr.ee%2FnGQ1EP2j97&type=custom_url&app_absent=0">Pedi por WhatsApp</a>
+      </div>
+      <a href="micuenta.html">Mi cuenta</a>
+      <a href="favorito.html">Favoritos</a>
+      <a href="carrito.html">Cesta</a>
+    </div>
+    
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>  
+    </div>
+    
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+    
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+  
+      function toggleSubcategories() {
+        var subcategories = document.getElementById("subcategories");
+        if (subcategories.style.display === "none") {
+          subcategories.style.display = "block";
+        } else {
+          subcategories.style.display = "none";
+        }
+      }
+    </script>
+  </div>
+</header>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <nav class="modal-list">
+        <div class="modal-item">
+          <a href="https://www.rappi.com.ar/restaurantes/208447-casa-nueza" target="_blank">Pedí por rappi <i class="fa-duotone fa-moped" style="--fa-primary-color: #345530; --fa-secondary-color:#345530; font-size: 16px;"></i></a>
+        </div>
+        <div class="modal-item">
+          <a href="https://api.whatsapp.com/send/?text=Ped%C3%AD+por+Whatsapp+-+https%3A%2F%2Ftr.ee%2FnGQ1EP2j97&type=custom_url&app_absent=0" target="_blank">Pedí por WhatsApp <i class="fa-brands fa-whatsapp" style="color: #345530; font-size: 16px;"></i></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+    <body>
+        <video id="video-background" autoplay muted loop>
+            <source src="resources/RPReplay_Final1687153618.mp4" type="video/mp4">
+            <!-- Agrega otros formatos de video aquí si es necesario -->
+          </video>
+        <h1 id="titulo">¡Bienvenido a Casa Nueza!</h1>
+
+        <p id="agradecimiento">Gracias por unirte a nuestra familia.</p>
+      
+        <div id="boton">
+          <button onclick="location.href='index.html'">Explora nuestro sitio</button>
+        </div>
+      
+        <script>
+          window.onload = function() {
+            var titulo = document.getElementById("titulo");
+            var agradecimiento = document.getElementById("agradecimiento");
+            var boton = document.getElementById("boton");
+      
+            titulo.style.visibility = "visible";
+            agradecimiento.style.visibility = "visible";
+            boton.style.visibility = "visible";
+          };
+        </script>
+</body>
+</html>
