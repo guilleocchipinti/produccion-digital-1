@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Casa Nueza</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+
+
+</head>
+
+
+<header class="header-container">
+
+  <div class="header">
+  
+    <div class="menu-icon" onclick="toggleMenu()">
+     <a href="index.html" class="logocel">
+        <img src="resources/logo blanco final.png" alt="logo">
+      </a>
+    </div>
+    <ul class="menu" id="myMenu">
+      <li>
+        <a href="index.html#acerca">Nosotras</a>
+      </li>
+      <li>
+        <a href="index.html#maps">Ubicación</a>
+      </li>
+    </ul>
+      <a href="index.html" class="logo">
+        <img src="resources/logo blanco final.png" alt="logo">
+      </a>
+      <ul class="menu" id="myMenu">
+      <li>
+        <a href="market.html">Market</a>
+      </li>
+      <li>
+    <a><button class="pedidos" id="myBtn">Pedidos</button> </a>
+      </li>
+      <li class="iconos">
+        <button class="user">
+          <a href="micuenta.html">
+            <i class="fa-duotone fa-user" style="--fa-primary-color: #e7e5de; --fa-secondary-color: #e7e5de;"></i>
+          </a>
+        </button>
+        <button class="favorito">
+          <a href="favorito.html">
+            <i class="fa-duotone fa-heart" style="--fa-primary-color: #e7e5de; --fa-secondary-color: #e7e5de; margin-right: 2px;"></i>
+          </a>
+        </button>
+        <button class="cesta">
+          <a href="carrito.html">
+            <i class="fa-duotone fa-basket-shopping-simple" style="--fa-primary-color: #e7e5de; --fa-secondary-color: #e7e5de; margin-left: 2px;"></i>
+          </a>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="responsive">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html#acerca">Nosotras</a>
+      <a href="index.html#maps">Ubicación</a>
+      <a href="market.html">Market</a>
+     <a class="pedidosbtn"> <button onclick="toggleSubcategories()">Pedidos</button></a> 
+      <div id="subcategories" style="display: none;">
+        <a href="https://www.rappi.com.ar/restaurantes/208447-casa-nueza">Pedi por Rappi</a>
+        <a href="https://api.whatsapp.com/send/?text=Ped%C3%AD+por+Whatsapp+-+https%3A%2F%2Ftr.ee%2FnGQ1EP2j97&type=custom_url&app_absent=0">Pedi por WhatsApp</a>
+      </div>
+      <a href="micuenta.html">Mi cuenta</a>
+      <a href="favorito.html">Favoritos</a>
+      <a href="carrito.html">Cesta</a>
+    </div>
+    
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>  
+    </div>
+    
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+    
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+  
+      function toggleSubcategories() {
+        var subcategories = document.getElementById("subcategories");
+        if (subcategories.style.display === "none") {
+          subcategories.style.display = "block";
+        } else {
+          subcategories.style.display = "none";
+        }
+      }
+    </script>
+  </div>
+</header>
+
+  
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <nav class="modal-list">
+        <div class="modal-item">
+          <a href="https://www.rappi.com.ar/restaurantes/208447-casa-nueza" target="_blank">Pedí por rappi <i class="fa-duotone fa-moped" style="--fa-primary-color: #345530; --fa-secondary-color:#345530; font-size: 16px;"></i></a>
+        </div>
+        <div class="modal-item">
+          <a href="https://api.whatsapp.com/send/?text=Ped%C3%AD+por+Whatsapp+-+https%3A%2F%2Ftr.ee%2FnGQ1EP2j97&type=custom_url&app_absent=0" target="_blank">Pedí por WhatsApp <i class="fa-brands fa-whatsapp" style="color: #345530; font-size: 16px;"></i></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+<h2>cesta de compras</h2>
+
+<div class="container">
+    <div class="total">
+        Total: $<span id="total-value">$3900</span>
+    </div>
+        
+    <ul class="product-list">
+        <li>
+            <img class="product-image" src="resources/mermelada final.png" alt="Producto 1">
+            <span class="product-name">Mermelada de estación</span>
+            <span class="product-price">$1100</span>
+            <div class="product-quantity">
+                <button class="quantity-button decrement">-</button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button increment">+</button>
+            </div>
+        </li>
+        <li>
+            <img class="product-image" src="resources/mayonesa de zanahoria final.png" alt="Producto 2">
+            <span class="product-name">Mayonesa de Zanahoria</span>
+            <span class="product-price">$1500</span>
+            <div class="product-quantity">
+                <button class="quantity-button decrement">-</button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button increment">+</button>
+            </div>
+        </li>
+        <li>
+            <img class="product-image" src="resources/mant. de mani.png" alt="Producto 3">
+            <span class="product-name">Mantequilla de maní</span>
+            <span class="product-price">$1300</span>
+            <div class="product-quantity">
+                <button class="quantity-button decrement">-</button>
+                <span class="quantity-value">1</span>
+                <button class="quantity-button increment">+</button>
+            </div>
+        </li>
+    </ul>
+
+    <div class="actions">
+        <button class="add-product"><a href="market.html">Agregar Producto</a></button>
+        <button class="checkout"><a href="gracias.html">Finalizar compra</a></button>
+    </div>
+</div>
+<script>
+    // Obtener todos los elementos de cantidad
+    const quantityValueElements = document.querySelectorAll('.quantity-value');
+    
+    // Agregar event listener a los botones de incremento
+    const incrementButtons = document.querySelectorAll('.increment');
+    incrementButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        incrementQuantity(index);
+      });
+    });
+    
+    // Agregar event listener a los botones de decremento
+    const decrementButtons = document.querySelectorAll('.decrement');
+    decrementButtons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        decrementQuantity(index);
+      });
+    });
+    
+    // Función para incrementar la cantidad de un producto
+    function incrementQuantity(index) {
+      const quantityValueElement = quantityValueElements[index];
+      let quantity = parseInt(quantityValueElement.textContent);
+      quantityValueElement.textContent = ++quantity;
+      updateTotal();
+    }
+    
+    // Función para decrementar la cantidad de un producto
+    function decrementQuantity(index) {
+      const quantityValueElement = quantityValueElements[index];
+      let quantity = parseInt(quantityValueElement.textContent);
+      if (quantity > 0) {
+        quantityValueElement.textContent = --quantity;
+        updateTotal();
+      }
+    }
+    
+    // Función para actualizar el total
+    function updateTotal() {
+      const productPrices = document.querySelectorAll('.product-price');
+      const quantityValues = document.querySelectorAll('.quantity-value');
+      let total = 0;
+      for (let i = 0; i < productPrices.length; i++) {
+        const price = parseInt(productPrices[i].textContent.replace('$', ''));
+        const quantity = parseInt(quantityValues[i].textContent);
+        total += price * quantity;
+      }
+      document.getElementById('total-value').textContent = total;
+    }
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      <footer>
+        <div class="footer-content">
+          <h3>Vení a conocernos!</h3>
+          <p>Todos los días de 8 a 20hs</p>
+          <ul class="social-icons">
+            <li><i class="fa-brands fa-instagram" style="color: #e7e5de;"></i> <a href="https://www.instagram.com/casanueza/" target="_blank">@casanueza</a></li>
+            <li><i class="fa-brands fa-spotify" style="color: #e7e5de;"></i> <a href="https://open.spotify.com/user/elviogomez" target="_blank">elviogomez</a></li>
+          </ul>
+        </div>
+      </footer>   
+</body>
+</html>
