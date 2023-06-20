@@ -900,7 +900,7 @@ footer li{
   border-radius: 25px 25px 25px 25px;
   margin-top: auto;
  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  flex: 0 0 25%; /* Esto establece que cada bloque ocupe el 25% del ancho del contenedor */
+  flex: 0 0 25%; 
 
 }
 .menu .platos {
@@ -990,14 +990,13 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999; /* asegura que el encabezado esté por encima de otros elementos */
+  z-index: 9999;
 }
 
 #section {
   margin-top: 2%;
   position: relative;
-  z-index: 1; /* asegura que la sección esté por debajo del encabezado */
-}
+  z-index: 1; }
 
 
 .comida{
@@ -1207,7 +1206,7 @@ background-color: #96A66A;
       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
     
-    /* Modal Content */
+    
     .modal-content {
       background-color: #fefefe;
     margin-left: 70%;
